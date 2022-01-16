@@ -1,0 +1,42 @@
+// Custom Colors
+$color-primary:       #0275d8;
+$color-success:       #5cb85c;
+$color-info:          #5bc0de;
+$color-warning:       #f0ad4e;
+$color-danger:        #d9534f;
+$color-dark:          #292b2c;
+$color-light:         #f7f7f7;
+$color-secondary:     #798289;
+
+// Main Colors
+$green-1:             #D9ED92;
+$green-2:             #B0DA97;
+$green-3:             #87C79B;
+$gray-1:              #51686D;
+$gray-2:              #383E46;
+$dark-1:              #1E141E;
+$white-1:             #D2D7D2;
+$white-2:             #E0E4E0;
+
+
+// Custom Theme
+$theme-colors: (
+    "primary":              $color-primary,
+    "success":              $color-success,
+    "info":                 $color-info,
+    "warning":              $color-warning,
+    "danger":               $color-danger,
+    "dark":                 $color-dark,
+    "light":                $color-light,
+    "secondary":            $color-secondary,
+    "green-1":              $green-1,
+    "green-2":              $green-2,
+    "green-3":              $green-3,
+    "gray-1":               $gray-1,
+    "gray-2":               $gray-2,
+    "dark-1":               $dark-1,
+    "white-1":              $white-1,
+    "white-2":              $white-2
+);
+
+@import 'node_modules/bootstrap/scss/bootstrap'

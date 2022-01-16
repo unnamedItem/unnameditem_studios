@@ -1,32 +1,43 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Navbar id="nav"/>
+    <router-view id="main-content"/>
+    <Footer id="footer"/>
   </div>
 </template>
 
+
+<script>
+import Navbar from './components/TheNavbar.vue'
+import Footer from './components/TheFooter.vue'
+
+export default {
+  components: {
+    Navbar,
+    Footer
+  }
+}
+</script>
+
+
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'VT323', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  min-height: 100vh;
 }
 
-#nav {
-  padding: 30px;
+#main-content {
+  padding-top: 25px;
+  padding-bottom: 80px;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 </style>
