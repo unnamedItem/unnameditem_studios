@@ -9,6 +9,11 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import './app.scss'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+// Plugins
+import ThemeSwitch from '@/plugins/theme-switch'
+
+Vue.use(ThemeSwitch)
+
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
