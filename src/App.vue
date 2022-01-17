@@ -41,7 +41,14 @@ export default {
 
 #main-content {
   padding-top: 25px;
-  padding-bottom: 80px;
+
+  @media (max-width: 576px) {
+    padding-bottom: 180px;
+  }
+
+  @media (min-width: 576px) {
+    padding-bottom: 80px;
+  }
 }
 
 #footer {
