@@ -45,9 +45,9 @@
                     <b-navbar-brand>© 2022 Unnamed Item Studios</b-navbar-brand>
                 </b-col>
                 <b-col cols="12" class="d-flex justify-content-center">
-                    <b-icon variant="white-2" class="m-3" icon="instagram" scale="1.8"></b-icon>
-                    <b-icon variant="white-2" class="m-3" icon="youtube" scale="1.8"></b-icon>
-                    <b-icon variant="white-2" class="m-3" icon="twitter" scale="1.8"></b-icon>                    
+                    <b-icon type="button" variant="white-2" class="m-3 icon-focus" icon="instagram" scale="1.8"></b-icon>
+                    <b-icon type="button" variant="white-2" class="m-3 icon-focus" icon="youtube" scale="1.8"></b-icon>
+                    <b-icon type="button" variant="white-2" class="m-3 icon-focus" icon="twitter" scale="1.8"></b-icon>                    
                 </b-col>
                 <b-col cols="12" class="d-flex justify-content-center">
                     <b-dropdown size="sm" variant="none" :text="$t('settings')" dropup>
@@ -99,6 +99,10 @@ export default {
         font-size: 20px;
     }
 
+    .dropdown-toggle:hover {
+        color: var(--bs-green);
+    }
+
 
     .nav {
         width: 33%;
@@ -112,6 +116,10 @@ export default {
         a:hover {
             color: var(--bs-green);
         }
+    }
+
+    .icon-focus:hover {
+        color: var(--bs-green) !important;
     }
 }
 
