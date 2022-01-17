@@ -13,6 +13,9 @@
         <b-nav class="d-flex d-sm-none justify-content-center">
             <b-nav-item v-bind:class="[{'active': $route.name === 'Home'}]" to="/">{{$t('home')}}</b-nav-item>
             <b-nav-item >{{$t('projects')}}</b-nav-item>
+            <b-navbar-brand style="margin: auto">
+                <img src="@/assets/unnameditem_token.png" width="40" height="40">
+            </b-navbar-brand>
             <b-nav-item >{{$t('blog')}}</b-nav-item>
             <b-nav-item >{{$t('contact')}}</b-nav-item>
         </b-nav>
@@ -47,39 +50,60 @@ export default {
 
 
 <style lang="scss">
-#nav {
-    a { 
-        color: var(--bs-white-1);
-    }
+@media (min-width: 576px) {
+    #nav {
+        a { 
+            color: var(--bs-white-1);
+        }
 
-    .nav-item {
-        min-width: 130px;
-        text-align: center;
-        font-size: 25px;
-        
-        border-right: 1px solid var(--bs-white-1);
-        border-left: 1px solid var(--bs-white-1);
-        border-radius: 10px;
+        .nav-item {
+            min-width: 130px;
+            text-align: center;
+            font-size: 25px;
+            
+            border-right: 1px solid var(--bs-white-1);
+            border-left: 1px solid var(--bs-white-1);
+            border-radius: 10px;
 
-        margin-left: 10px;
-        margin-right: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
 
-        :hover {
-            color: var(--bs-green);
+            :hover {
+                color: var(--bs-green);
+                border-right: 1px solid var(--bs-green);
+                border-left: 1px solid var(--bs-green);
+                border-radius: 10px;
+            }
+        }
+
+        .active {
             border-right: 1px solid var(--bs-green);
             border-left: 1px solid var(--bs-green);
             border-radius: 10px;
+            
+            a {
+                color: var(--bs-green);
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #nav {
+        a { 
+            color: var(--bs-white-1);
+            font-size: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
         }
     }
 
-    .active {
-        border-right: 1px solid var(--bs-green);
-        border-left: 1px solid var(--bs-green);
-        border-radius: 10px;
-        
-        a {
-            color: var(--bs-green);
-        }
+    .nav-item {
+        width: 20%;
+    }
+
+    .nav {
+        width: 90%;
     }
 }
 </style>
