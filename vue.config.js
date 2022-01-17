@@ -7,5 +7,12 @@ module.exports = {
       enableInSFC: true,
       enableBridge: false
     }
+  },
+
+  pages: {
+    index: {
+      entry: 'src/main.js',
+      title: 'UnnamedItem Studios',
+    },
   }
 }
