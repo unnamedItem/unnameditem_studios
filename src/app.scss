@@ -9,9 +9,9 @@ $color-light:         #f7f7f7;
 $color-secondary:     #798289;
 
 // Main Colors
-$green-1:             #D9ED92;
-$green-2:             #B0DA97;
-$green-3:             #87C79B;
+$green:               #B1D336;
+$orange:              #FF9100;
+$purple:              #7B2CBF;
 $gray-1:              #51686D;
 $gray-2:              #383E46;
 $dark-1:              #1E141E;
@@ -29,9 +29,9 @@ $theme-colors: (
     "dark":                 $color-dark,
     "light":                $color-light,
     "secondary":            $color-secondary,
-    "green-1":              $green-1,
-    "green-2":              $green-2,
-    "green-3":              $green-3,
+    "green":                $green,
+    "orange":               $orange,
+    "purple":               $purple,
     "gray-1":               $gray-1,
     "gray-2":               $gray-2,
     "dark-1":               $dark-1,

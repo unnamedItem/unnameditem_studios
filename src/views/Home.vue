@@ -28,13 +28,14 @@ export default {
   width: 80%;
   margin: auto;
   border-radius: 10px;
+  text-align: center;
 }
 
 .card {
   font-size: 20px;
   color: var(--bs-gray-2);
   background-color: var(--bs-white-2) !important;
-  border: 1px solid var(--bs-white-1);
+  border: 1px solid var(--bs-white-1) !important;
   padding: 20px;
   width: 80%;
   margin: auto;

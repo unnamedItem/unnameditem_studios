@@ -33,6 +33,8 @@ export default {
 #main-content {
   padding-top: 25px;
   padding-bottom: 80px;
+  max-height: 100vh;
+  overflow: auto;
 }
 
 #footer {
