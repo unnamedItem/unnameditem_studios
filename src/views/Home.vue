@@ -19,27 +19,55 @@ export default {
 
 
 <style lang="scss">
-.main-logo {
-  font-size: 50px;
-  color: var(--bs-gray-2);
-  background-color: var(--bs-white-2);
-  border: 1px solid var(--bs-white-1);
-  padding: 20px;
-  width: 80%;
-  margin: auto;
-  border-radius: 10px;
-  text-align: center;
+.light-theme {
+  .main-logo {
+    font-size: 50px;
+    color: var(--bs-gray-2);
+    background-color: var(--bs-white-2);
+    border: 1px solid var(--bs-white-1);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .card {
+    font-size: 20px;
+    color: var(--bs-gray-2);
+    background-color: var(--bs-white-2) !important;
+    border: 1px solid var(--bs-white-1) !important;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px !important;
+    margin-top: 10px;
+  }
 }
 
-.card {
-  font-size: 20px;
-  color: var(--bs-gray-2);
-  background-color: var(--bs-white-2) !important;
-  border: 1px solid var(--bs-white-1) !important;
-  padding: 20px;
-  width: 80%;
-  margin: auto;
-  border-radius: 10px !important;
-  margin-top: 10px;
+.dark-theme {
+  .main-logo {
+    font-size: 50px;
+    color: var(--bs-white-2);
+    background-color: var(--bs-gray-1);
+    border: 1px solid var(--bs-gray-2);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .card {
+    font-size: 20px;
+    color: var(--bs-white-2);
+    background-color: var(--bs-gray-1) !important;
+    border: 1px solid var(--bs-gray-2) !important;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px !important;
+    margin-top: 10px;
+  }
 }
 </style>

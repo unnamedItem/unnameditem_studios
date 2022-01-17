@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="$theme.color">
     <Navbar id="nav"/>
     <router-view id="main-content"/>
     <Footer id="footer"/>
@@ -28,6 +28,14 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+}
+
+.dark-theme {
+  background-color: var(--bs-gray-2);
+}
+
+.light-theme {
+  background-color: var(--bs-white-1);
 }
 
 #main-content {

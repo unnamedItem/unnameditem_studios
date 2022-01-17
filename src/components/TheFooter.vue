@@ -41,6 +41,10 @@ export default {
 
 <style lang="scss">
 #footer {
+    background-color: var(--bs-dark);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     .navbar-brand {
         color: var(--bs-white-2);
         text-align: center;
@@ -49,11 +53,54 @@ export default {
 
     .dropdown-toggle {
         color: var(--bs-white-2);
+        font-size: 20px;
     }
 
+
+    .nav {
+        width: 33%;
+    }
+
+    .nav-item {
+        a {
+            color: var(--bs-white-2);
+        }
+
+        a:hover {
+            color: var(--bs-green);
+        }
+    }
+}
+
+.dark-theme #footer {
     .dropdown-menu {
         right: 0;
         top: 0;
+        background-color: var(--bs-gray-1);
+
+        a {
+            color: var(--bs-dark) !important;
+        }
+        
+        a:hover {
+            background-color: var(--bs-green);
+        }
+    }
+}
+
+.light-theme #footer {
+    .dropdown-menu {
+        right: 0;
+        top: 0;
+        background-color: var(--bs-white-2);
+
+        a {
+            color: var(--bs-dark) !important;
+        }
+        
+        a:hover {
+            background-color: var(--bs-green);
+        }
     }
 }
 </style>
