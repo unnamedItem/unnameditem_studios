@@ -11,8 +11,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // Plugins
 import ThemeSwitch from '@/plugins/theme-switch'
+import ApiQuery from '@/plugins/api-query'
 
 Vue.use(ThemeSwitch)
+Vue.use(ApiQuery)
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
