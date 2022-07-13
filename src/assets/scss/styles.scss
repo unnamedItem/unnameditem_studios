@@ -1,0 +1,23 @@
+.light-theme {
+    a {
+        color: var(--bs-purple);
+    }
+}
+
+.dark-theme {
+    a {
+        color: var(--bs-green);
+    }
+}
+
+.variant-green {
+    color: var(--bs-green);
+}
+
+.variant-orange {
+    color: var(--bs-orange);
+}
+
+.variant-purple {
+    color: var(--bs-purple);
+}

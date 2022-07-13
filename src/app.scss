@@ -39,4 +39,6 @@ $theme-colors: (
     "white-2":              $white-2
 );
 
-@import 'node_modules/bootstrap/scss/bootstrap'
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import './assets/scss/card.scss';
+@import './assets/scss/styles.scss';
