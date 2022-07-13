@@ -1,23 +1,23 @@
 <template>
     <b-navbar variant="dark" class="d-flex justify-content-center" sticky>
         <b-nav class="d-none d-sm-flex">
-            <b-nav-item v-bind:class="[{'active': $route.name === 'Home'}]" to="/">{{$t('home')}}</b-nav-item>
-            <b-nav-item >{{$t('projects')}}</b-nav-item>
+            <b-nav-item v-bind:class="[{'active': $route.name === 'Home'}]" @click="navigate('Home')">{{$t('home')}}</b-nav-item>
+            <b-nav-item v-bind:class="[{'active': $route.name === 'Projects'}]" @click="navigate('Projects')">{{$t('projects')}}</b-nav-item>
             <b-navbar-brand style="margin: auto">
                 <img src="@/assets/unnameditem_token.png" width="40" height="40">
             </b-navbar-brand>
-            <b-nav-item >{{$t('blog')}}</b-nav-item>
-            <b-nav-item >{{$t('contact')}}</b-nav-item>
+            <b-nav-item v-bind:class="[{'active': $route.name === 'Blog'}]" @click="navigate('Blog')">{{$t('blog')}}</b-nav-item>
+            <b-nav-item v-bind:class="[{'active': $route.name === 'Contact'}]" @click="navigate('Contact')">{{$t('contact')}}</b-nav-item>
         </b-nav>
 
         <b-nav class="d-flex d-sm-none justify-content-center">
-            <b-nav-item v-bind:class="[{'active': $route.name === 'Home'}]" to="/">{{$t('home')}}</b-nav-item>
-            <b-nav-item >{{$t('projects')}}</b-nav-item>
+            <b-nav-item v-bind:class="[{'active': $route.name === 'Home'}]" @click="navigate('Home')">{{$t('home')}}</b-nav-item>
+            <b-nav-item v-bind:class="[{'active': $route.name === 'Projects'}]" @click="navigate('Projects')">{{$t('projects')}}</b-nav-item>
             <b-navbar-brand style="margin: auto">
                 <img src="@/assets/unnameditem_token.png" width="40" height="40">
             </b-navbar-brand>
-            <b-nav-item >{{$t('blog')}}</b-nav-item>
-            <b-nav-item >{{$t('contact')}}</b-nav-item>
+            <b-nav-item v-bind:class="[{'active': $route.name === 'Blog'}]" @click="navigate('Blog')">{{$t('blog')}}</b-nav-item>
+            <b-nav-item v-bind:class="[{'active': $route.name === 'Contact'}]" @click="navigate('Contact')">{{$t('contact')}}</b-nav-item>
         </b-nav>
     </b-navbar>
 </template>
@@ -36,7 +36,7 @@
         "home": "Inicio",
         "blog": "Blog",
         "contact": "Contacto",
-        "projects": "Projectos"
+        "projects": "Proyectos"
     }
 }
 </i18n>
@@ -45,6 +45,13 @@
 <script>
 export default {
     name: 'nav-bar',
+
+    methods: {
+        navigate: function(name) {
+            if (this.$route.name != name)
+                this.$router.push({name: name});
+        }
+    }
 }
 </script>
 

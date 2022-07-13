@@ -2,14 +2,14 @@
     <div>
         <div class="px-lg-5 px-3 d-none d-sm-flex justify-content-between">
             <b-nav class="my-auto">
-                <b-nav-item>
+                <b-nav-item href="https://www.instagram.com/unnameditem.studios/" target="_blank">
                     <b-icon icon="instagram"></b-icon>
                 </b-nav-item>
-                <b-nav-item>
-                    <b-icon icon="youtube"></b-icon>
+                <b-nav-item href="https://www.linkedin.com/in/franco-cusmai-02a973210/" target="_blank">
+                    <b-icon icon="linkedin"></b-icon>
                 </b-nav-item>
-                <b-nav-item>
-                    <b-icon icon="twitter"></b-icon>
+                <b-nav-item href="https://github.com/unnamedItem" target="_blank">
+                    <b-icon icon="github"></b-icon>
                 </b-nav-item>
             </b-nav>
 
@@ -45,9 +45,15 @@
                     <b-navbar-brand>© 2022 Unnamed Item Studios</b-navbar-brand>
                 </b-col>
                 <b-col cols="12" class="d-flex justify-content-center">
-                    <b-icon type="button" variant="white-2" class="m-3 icon-focus" icon="instagram" scale="1.8"></b-icon>
-                    <b-icon type="button" variant="white-2" class="m-3 icon-focus" icon="youtube" scale="1.8"></b-icon>
-                    <b-icon type="button" variant="white-2" class="m-3 icon-focus" icon="twitter" scale="1.8"></b-icon>                    
+                    <a href="https://www.instagram.com/unnameditem.studios/" target="_blank">
+                        <b-icon type="button" variant="white-2" class="m-3 icon-focus" icon="instagram" scale="1.8"></b-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/franco-cusmai-02a973210/" target="_blank">
+                        <b-icon type="button" variant="white-2" class="m-3 icon-focus" icon="linkedin" scale="1.8"></b-icon>
+                    </a>
+                    <a href="https://github.com/unnamedItem" target="_blank">
+                        <b-icon type="button" variant="white-2" class="m-3 icon-focus" icon="github" scale="1.8"></b-icon>
+                    </a>
                 </b-col>
                 <b-col cols="12" class="d-flex justify-content-center">
                     <b-dropdown size="sm" variant="none" :text="$t('settings')" dropup>
