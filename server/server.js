@@ -30,3 +30,4 @@ app.get('/ig/media/:mediaId', async function(req, res) {
 const port = process.env.PORT || 8080;
 app.listen(port);
 console.log(`site is listening on port: ${port}`);
+console.log(`test env: ${process.env.TEST}`);
